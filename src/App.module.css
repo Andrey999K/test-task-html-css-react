@@ -1,0 +1,13 @@
+.main {
+  background: #F8FAFF;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+
+  .main {
+    padding-left: 33%;
+  }
+
+}
