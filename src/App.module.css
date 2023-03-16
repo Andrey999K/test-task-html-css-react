@@ -1,7 +1,16 @@
 .main {
   background: #F8FAFF;
   min-height: 100vh;
-  padding: 20px;
+  padding: 20px 60px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 60px;
+}
+
+.buttonCreateShop {
+  margin-top: 64px;
 }
 
 @media (min-width: 768px) {

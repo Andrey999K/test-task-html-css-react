@@ -1,4 +1,4 @@
-@import "../css/colors.css";
+@import "../../css/colors.css";
 
 .header {
   /*display: none;*/
@@ -7,6 +7,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
+  max-width: 33%;
   padding: 30px 25px;
   background: #ffffff;
 }
@@ -30,6 +31,7 @@
   display: flex;
   align-items: center;
   font-weight: 500;
+  color: var(--color-gray);
 }
 
 .headerListItemIcon {

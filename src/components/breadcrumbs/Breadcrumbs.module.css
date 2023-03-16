@@ -1,0 +1,16 @@
+.breadcrumbsList {
+  display: flex;
+  gap: 7px;
+}
+
+.breadcrumbsItem:not(:last-child) {
+  position: relative;
+  padding-right: 15px;
+}
+
+.breadcrumbsItem:not(:last-child)::after {
+  content: '>';
+  position: absolute;
+  font-weight: 700;
+  right: 0;
+}

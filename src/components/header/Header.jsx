@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Header.module.css';
-import home from '../img/sprite.svg';
+import home from '../../img/sprite.svg';
 
 const Header = ({logo, listItem}) => {
     return (

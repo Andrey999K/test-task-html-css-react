@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import classes from './App.module.css';
-import Header from "./components/Header";
-import home from './img/home.svg';
-import cart from './img/cart.svg';
-import megaphone from './img/megaphone.svg';
-import Breadcrumbs from "./components/Breadcrumbs";
+import Header from "./components/header/Header";
+import Breadcrumbs from "./components/breadcrumbs/Breadcrumbs";
 import logo from './img/logo-work5.svg';
 import sprite from './img/sprite.svg';
+import Buttons from "./components/buttons/Buttons";
+import avatar from './img/photo.png';
+import Button from "./components/UI/button";
+import ModalWindow from "./components/modalWindow/ModalWindow";
 
 function App() {
 
@@ -117,12 +118,27 @@ function App() {
       {id: 2, text: 'Мои магазины', link: '#'}
   ])
 
+  const [modalShow, setModalShow] = useState(false);
+
+  const closeModal = () => {
+      setModalShow(false);
+  }
+
   return (
     <div className="App">
       <Header logo={logo} listItem={navList}/>
       <main className={classes.main}>
-          <Breadcrumbs data={breadcrumbs}/>
+          <Buttons avatar={avatar} username="Максим Добжанский"/>
+          <div className={classes.container}>
+              <div>
+                  <Breadcrumbs data={breadcrumbs}/>
+              </div>
+              <div className={classes.buttonCreateShop}>
+                  <Button onClick={() => setModalShow(true)} text="Создать свой магазин" icon={sprite + "#plus"} type="green"/>
+              </div>
+          </div>
       </main>
+        <ModalWindow state={modalShow} close={closeModal}>11111111111</ModalWindow>
     </div>
   );
 }

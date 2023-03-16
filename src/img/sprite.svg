@@ -64,4 +64,21 @@
             <path d="M15.2321 4.18295L20.2415 9.25984L15.2827 14.303" stroke-width="0.944538" stroke-miterlimit="22.9256"/>
         </g>
     </symbol>
+    <symbol id="message" viewBox="0 0 24 18">
+        <g>
+            <path d="M21.3295 0H3.10018C2.05806 0 1.21326 0.844805 1.21326 1.88692V16.1127C1.21326 17.1548 2.05806 17.9996 3.10018 17.9996H21.3295C22.3716 17.9996 23.2164 17.1548 23.2164 16.1127V1.88692C23.2164 0.844805 22.3716 0 21.3295 0Z" fill="#7B7B7B"/>
+            <path d="M1 4.52862L10.7792 11.6989C11.5176 12.2404 12.7317 12.2404 13.4701 11.6989L23.4298 4.39735" stroke="white" fill="none" stroke-width="0.75477" stroke-miterlimit="22.9256"/>
+        </g>
+    </symbol>
+    <symbol id="plus" viewBox="0 0 11 11" fill="none">
+        <g>
+            <path d="M10.293 4.08008V6.53125H0.546875V4.08008H10.293ZM6.75781 0.222656V10.5742H4.0918V0.222656H6.75781Z" fill="white"/>
+        </g>
+    </symbol>
+    <symbol id="close" viewBox="0 0 7 7">
+        <g>
+            <path d="M0.999999 1.09595L5.99456 5.89861" stroke="#656565" stroke-linecap="round"/>
+            <path d="M5.99463 1.10001L1.00408 5.89861" stroke="#656565" stroke-linecap="round"/>
+        </g>
+    </symbol>
 </svg>
